@@ -1,14 +1,6 @@
 
 -- 1. Transform ADA-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/ADA-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/ADA-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'ADA' as currency, 
@@ -35,15 +27,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/ADA' USING org.apache
 
 	
 -- 2. Transform BCH-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/BCH-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/BCH-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'BCH' as currency, 
@@ -72,15 +56,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/BCH' USING org.apache
 
 
 -- 3. Transform BNB-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/BNB-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/BNB-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'BNB' as currency, 
@@ -107,15 +83,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/BNB' USING org.apache
 
 
 -- 4. Transform BTC-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/BTC-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/BTC-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'BTC' as currency, 
@@ -140,15 +108,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/BTC' USING org.apache
 
 
 -- 5. Transform DOGE-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/DOGE-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/DOGE-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'DOGE' as currency, 
@@ -174,15 +134,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/DOGE' USING org.apach
 
 
 -- 6. Transform EOS-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/EOS-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/EOS-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'EOS' as currency, 
@@ -209,15 +161,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/EOS' USING org.apache
 
 
 -- 7. Transform ETC-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/ETC-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/ETC-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'ETC' as currency, 
@@ -243,15 +187,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/ETC' USING org.apache
 
 
 -- 8. Transform ETH-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/ETH-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/ETH-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'ETH' as currency, 
@@ -276,15 +212,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/ETH' USING org.apache
 
 
 -- 9. Transform IOTA-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/IOTA-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/IOTA-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'IOTA' as currency, 
@@ -311,15 +239,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/IOTA' USING org.apach
 
 
 -- 10. Transform LTC-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/LTC-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/LTC-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'LTC' as currency, 
@@ -346,15 +266,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/LTC' USING org.apache
 
 
 -- 11. Transform MKR-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/MKR-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/MKR-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'MKR' as currency, 
@@ -380,15 +292,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/MKR' USING org.apache
 
 
 -- 12. Transform TRX-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/TRX-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/TRX-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'TRX' as currency, 
@@ -415,15 +319,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/TRX' USING org.apache
 
 
 -- 13. Transform XLM-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/XLM-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/XLM-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'XLM' as currency, 
@@ -449,15 +345,7 @@ STORE crypto2 INTO 'gs://assignment1_resources/crypto/data/XLM' USING org.apache
 
 
 -- 14. Transform XMR-BUSD.csv
-crypto = LOAD 'gs://assignment1_resources/crypto/XMR-BUSD.csv' using PigStorage(',') AS (open_time:long,
-																						open:double,
-																						high:double,
-																						low:double,
-																						close:double,
-																						volume:double,
-																						close_time:long,
-																						quote_asset_volume:double,
-																						number_of_trades:int);
+crypto = LOAD 'gs://assignment1_resources/crypto/XMR-BUSD.csv' using PigStorage(',') AS (open_time:long,open:double,high:double,low:double,close:double,volume:double,close_time:long,quote_asset_volume:double,number_of_trades:int);
 
 crypto1 = FOREACH crypto GENERATE
 	'XMR' as currency, 
